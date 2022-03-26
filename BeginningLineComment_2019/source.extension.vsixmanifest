@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="BeginningLineComment_2019.dfa5379c-3c75-4e21-af06-a420a64e7bc7" Version="1.0" Language="ja-JP" Publisher="Kawamoto" />
+        <DisplayName>BeginningLineComment_2019</DisplayName>
+        <Description xml:space="preserve">Set comment string at the beginning of line.
+行頭にコメント文字列を設定</Description>
+        <License>Resources\License.txt</License>
+        <Icon>Resources\Package.ico</Icon>
+        <PreviewImage>Resources\Preview.png</PreviewImage>
+        <Tags>coding, comment</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
